@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+// src/styles.scss
+@import 'styles/tokens';
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}

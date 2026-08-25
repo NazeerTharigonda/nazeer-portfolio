@@ -1,0 +1,41 @@
+<div class="home-container">
+  <section class="hero">
+    <div class="hero__content">
+      <span class="hero__greeting">👋 HELLO, I'M</span>
+      <h1 class="hero__name">Nazeer</h1>
+      <h2 class="hero__role">Associate Frontend Engineer</h2>
+      <p class="hero__description">
+        I build modern, scalable and efficient web applications and love turning ideas into real-world solutions.
+      </p>
+      <div class="hero__actions">
+        <a routerLink="/projects" class="btn-primary">Explore My Work →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <div class="section-header">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <a routerLink="/projects" class="view-all">View All Projects →</a>
+    </div>
+
+    <div class="project-grid">
+      @for (project of portfolio.featuredProjects(); track project.id) {
+        <article class="project-card">
+          <div class="project-card__content">
+            <h3 class="project-card__title">{{ project.title }}</h3>
+            <p class="project-card__summary">{{ project.summary }}</p>
+            
+            <div class="project-card__tech">
+              @for (tech of project.technologies; track tech) {
+                <span class="tech-chip">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        </article>
+      } @empty {
+        <p class="loading-text">Loading projects...</p>
+      }
+    </div>
+  </section>
+</div>

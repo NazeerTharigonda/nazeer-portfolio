@@ -1,0 +1,24 @@
+// src/styles/_tokens.scss
+
+:root {
+  // Brand & Accent Colors
+  --color-accent-primary: #5B7CFF;
+  --color-accent-secondary: #8B5CF6;
+
+  // Backgrounds & Surfaces
+  --color-bg-main: #070B12;
+  --color-bg-surface: #0D1420;
+
+  // Typography Colors
+  --color-text-primary: #F5F7FA;
+  --color-text-secondary: #98A2B3;
+
+  // Borders & Geometry
+  --color-border: rgba(255, 255, 255, 0.10);
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  // Typography Family
+  --font-primary: 'Inter', sans-serif; 
+}
