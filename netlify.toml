@@ -1,0 +1,3 @@
+[build]
+  command = "cd nazeer-portfolio && npm run build"
+  publish = "nazeer-portfolio/dist/nazeer-portfolio/browser"
